@@ -1,4 +1,7 @@
-package w1_03102021.Bankomat;
+//W repozytorim gita staramy się umieszczać cały projekt.
+//Widzę tutaj pakiet w1_03102021, natomiast nie ma go w repozytorium GITa. 
+
+package w1_03102021.Bankomat; 
 
 import java.util.Scanner;
 
@@ -29,7 +32,7 @@ public class Main {
         } else {
             System.out.println("Pin jest poprawny");
             Scanner scanner2 = new Scanner(System.in);
-            boolean isRunning = true;
+            boolean isRunning = true; //Bardzo dobrze zaprogramowane wyjście z programu. 
             while (isRunning) {
                 bankomat.printList();
                 String choice = scanner2.nextLine();

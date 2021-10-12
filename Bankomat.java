@@ -1,5 +1,8 @@
 package w1_03102021.Bankomat;
 
+//Bardzo podoba mi się Twoja klasa "Bankomat".
+//Świetnie zrozumiałeś jak wydzielać zachowania do metod klasy
+
 public class Bankomat {
 
     private double totalAmount;
@@ -9,7 +12,7 @@ public class Bankomat {
         this.totalAmount = totalAmount;
         this.clients = clients;
     }
-
+    
     public Client putCard(String accountNumber){
        for(int i = 0; i < clients.length ; i++){
            if (clients[i].getAccountNumber().equals(accountNumber)){
@@ -44,7 +47,7 @@ public class Bankomat {
     public boolean isWithdrawPossible(Client client, double amt){
         if (checkBalance(client)>=amt){
             return true;
-        }else return false;
+        }else return false; //Pamiętajmy o klamerkach, nawet w takich prostych przypadkach
 
     }
 
